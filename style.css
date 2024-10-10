@@ -1,0 +1,480 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+  background-color: #f7f7f7; /* light gray background */
+  padding: 20px; /* add some padding to the navbar */
+  display: flex; /* use flexbox to arrange the navbar elements */
+  justify-content: space-between; /* justify the navbar elements to the left and right */
+  align-items: center; /* center the navbar elements vertically */
+  border-bottom: 1px solid #ddd; /* add a light gray border to the bottom */
+}
+
+.navbar-brand {
+  margin-right: 20px; /* add some space between the logo and the navigation links */
+}
+
+.navbar-brand img {
+  width: 40px; /* set the width of the logo */
+  height: 40px; /* set the height of the logo */
+}
+
+.navbar-nav {
+  list-style: none; /* remove bullet points */
+  padding: 0; /* remove padding */
+  margin: 0; /* remove margin */
+  display: flex; /* use flexbox to arrange the navigation links */
+}
+
+.navbar-nav li {
+  margin-right: 20px; /* add some space between the navigation links */
+}
+
+.navbar-nav a {
+  color: #333; /* dark gray text color */
+  text-decoration: none; /* remove underline */
+  transition: color 0.2s ease-in; /* add a transition effect to the text color */
+}
+
+.navbar-nav a:hover {
+  color: #666; /* darker gray text color on hover */
+}
+
+.user-profile-icon {
+  margin-left: 20px; /* add some space between the user profile icon and the navigation links */
+  cursor: pointer; /* change the cursor to a pointer */
+}
+
+.user-profile-icon i {
+  color: #333; /* dark gray text color */
+  font-size: 24px; /* set the font size of the user profile icon */
+}
+
+.navbar-toggle {
+  display: none; /* hide the toggle button on large screens */
+  background-color: #333; /* dark gray background */
+  color: #fff; /* white text color */
+  border: none; /* remove the border */
+  padding: 10px; /* add some padding to the toggle button */
+  cursor: pointer; /* change the cursor to a pointer */
+}
+
+.navbar-toggle span {
+  display: block; /* make the span elements block-level */
+  width: 20px; /* set the width of the span elements */
+  height: 2px; /* set the height of the span elements */
+  background-color: #fff; /* white background */
+  margin-bottom: 5px; /* add some space between the span elements */
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    display: none; /* hide the navigation links on small screens */
+  }
+  .navbar-toggle {
+    display: block; /* show the toggle button on small screens */
+  }
+  .navbar-toggle span {
+    background-color: #333; /* dark gray background */
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-brand {
+    margin-right: 10px; /* reduce the margin on very small screens */
+  }
+  .user-profile-icon i {
+    font-size: 18px; /* reduce the font size of the user profile icon on very small screens */
+  }
+}
+.hero {
+    background-image: url('pexels-photo-164595.jpg');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-blend-mode: multiply;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: grid;
+}
+
+.hero h2{
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.hero p{
+    color: black;
+    font: italic;
+    font-size: 25px;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(4);
+}
+
+.room-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    @media screen and (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.room-card:hover{
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.rooms h2{
+  color: black;
+  font-size: 25px;
+  text-align: center;
+}
+
+.hero button{
+   padding: 20px;
+   background-color: #0099ff;
+   color: #fff;
+   border: none;
+   border-radius: 5px;
+   transition: background-color 0.2s ease;
+   cursor: pointer;
+   font-size: 18px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   font-family: Arial, sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   font-weight: bold;
+   text-decoration: none;
+
+
+}
+
+.room-card {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.room-card button{
+    background-color: #0099ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.2s ease;
+}
+
+.room-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0
+}
+
+.hero {
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .amenities{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+
+  /* Booking Section Styles */
+
+.booking {
+  background-color:  #0099ff; /* light gray background */
+  padding: 40px 20px; /* add some padding to the section */
+}
+
+.booking h2 {
+  font-size: 24px; /* make the heading larger */
+  font-weight: bold; /* make the heading bold */
+  margin-bottom: 20px; /* add some space between the heading and the form */
+  animation: fadeIn 1s ease-in; /* add a fade-in animation to the heading */
+}
+
+.booking form {
+  display: flex; /* use flexbox to arrange the form elements */
+  flex-wrap: wrap; /* allow the form elements to wrap to the next line */
+  justify-content: center; /* center the form elements horizontally */
+  animation: slideUp 1s ease-in; /* add a slide-up animation to the form */
+}
+
+.booking label {
+  margin-bottom: 10px; /* add some space between the label and the input field */
+}
+
+.booking input, .booking select {
+  padding: 10px; /* add some padding to the input fields */
+  border: 1px solid #ddd; /* add a light gray border */
+  border-radius: 10px; /* add some rounded corners */
+  width: 100%; /* make the input fields full-width */
+  margin-bottom: 20px; /* add some space between the input fields */
+}
+
+.booking button[type="submit"] {
+  background-color: #4CAF50; /* green background color */
+  color: #fff; /* white text color */
+  padding: 10px 20px; /* add some padding to the button */
+  border: none; /* remove the border */
+  border-radius: 10px; /* add some rounded corners */
+  cursor: pointer; /* change the cursor to a pointer */
+  animation: pulse 1s ease-in; /* add a pulse animation to the button */
+}
+
+/* Animation Keyframes */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+  .booking form {
+    flex-direction: column; /* change the flex direction to column on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .booking input, .booking select {
+    width: 90%; /* reduce the width of the input fields on very small screens */
+  }
+}
+
+.contact{
+    margin-top: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+/* Testimonial Section Styles */
+
+.testimonials {
+  background-color: #f7f7f7; /* light gray background */
+  padding: 40px 20px; /* add some padding to the section */
+}
+
+.testimonials h2 {
+  font-size: 24px; /* make the heading larger */
+  font-weight: bold; /* make the heading bold */
+  margin-bottom: 20px; /* add some space between the heading and the testimonials */
+  animation: fadeIn 1s ease-in; /* add a fade-in animation to the heading */
+}
+
+.testimonial-grid {
+  display: grid; /* use grid layout to arrange the testimonials */
+  grid-template-columns: repeat(3, 1fr); /* create 3 columns that take up equal space */
+  gap: 20px; /* add some gap between the testimonials */
+}
+
+.testimonial-card {
+  background-color: #fff; /* white background for each testimonial */
+  padding: 20px; /* add some padding to each testimonial */
+  border: 1px solid #ddd; /* add a light gray border */
+  border-radius: 10px; /* add some rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* add some subtle shadow */
+  animation: slideIn 1s ease-in; /* add a slide-in animation to each testimonial card */
+}
+
+.testimonial-card p {
+  font-size: 16px; /* make the testimonial text larger */
+  font-style: italic; /* make the testimonial text italic */
+  margin-bottom: 10px; /* add some space between the testimonial text and the author */
+}
+
+.testimonial-card p.author {
+  font-size: 14px; /* make the author text smaller */
+  font-weight: bold; /* make the author text bold */
+  color: #666; /* make the author text darker gray */
+}
+
+/* Animation Keyframes */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+  .testimonial-grid {
+    grid-template-columns: repeat(2, 1fr); /* reduce to 2 columns on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonial-grid {
+    grid-template-columns: 1fr; /* reduce to 1 column on very small screens */
+  }
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer .col-md-4 {
+  flex-basis: 33.33%;
+  padding: 20px;
+}
+
+.footer h4 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: Arial, sans-serif;
+  letter-spacing: 1px;
+  
+}
+
+.footer li {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: Arial, sans-serif;
+
+}
+
+.footer a {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s ease-in;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  letter-spacing: 1px;
+
+}
+
+.footer a:hover {
+  color: #ddd;
+  text-decoration: underline;
+  transition: color 0.3s ease-in;
+
+}
+
+.footer .copyright {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #ccc;
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: Arial, sans-serif;
+}
+
+.footer .copyright p {
+  margin: 0;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+
+}

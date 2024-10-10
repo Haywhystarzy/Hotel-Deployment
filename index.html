@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Website Template</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</html>
+</head>
+<body>
+    <!-- Header Section -->
+    <nav class="navbar">
+        <div class="navbar-brand">
+          <img src="hotel-logo.png" alt="Hotel Logo">
+        </div>
+        <ul class="navbar-nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#rooms">Rooms</a></li>
+          <li><a href="#amenities">Amenities</a></li>
+          <li><a href="#booking">Booking</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="user-profile-icon">
+          <i class="fas fa-user-circle fa-2x"></i>
+        </div>
+        <button class="navbar-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        
+        <h3>Welcome to Starzy Hotel🎪</h3>
+        <h2 span id="text"> </h2>
+        <img src="" alt="">
+        <p>Experience the best of [City] at our luxurious hotel</p>
+        <button>Book Now</button>
+    </section>
+
+    <!-- Rooms Section -->
+    <section class="rooms">
+        <h2>Our Rooms</h2>
+        <div class="room-grid">
+            <div class="room-card">
+                <img src="bedroom.jpg" alt="Room 1">
+                <h3>Deluxe Room</h3>
+                <p>Starting from $150/night</p>
+                <button>Book Now</button>
+            </div>
+            <div class="room-card">
+                <img src="pexels-itsterrymag-2631746.jpg" alt="Room 2">
+                <h3>Executive Room</h3>
+                <p>Starting from $200/night</p>
+                <button>Book Now</button>
+            </div>
+            <!-- Add more room cards here -->
+        </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section class="amenities">
+        <h2>Amenities</h2>
+        <ul>
+            <li>Free Wi-Fi</li>
+            <li>Fitness Center</li>
+            <li>Restaurant and Bar</li>
+            <li>Room Service</li>
+            <!-- Add more amenities here -->
+        </ul>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking">
+        <h2>Book Your Stay</h2>
+        <form action="booking.php" method="post">
+            <label for="checkin">Check-in:</label>
+            <input type="date" id="checkin" name="checkin">
+            <label for="checkout">Check-out:</label>
+            <input type="date" id="checkout" name="checkout">
+            <label for="roomtype">Room Type:</label>
+            <select id="roomtype" name="roomtype">
+                <option value="deluxe">Deluxe Room</option>
+                <option value="executive">Executive Room</option>
+                <!-- Add more room types here -->
+            </select>
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2>Get in Touch</h2>
+        <p>[Hotel Address]</p>
+        <p>[Hotel Phone Number]</p>
+        <p>[Hotel Email]</p>
+    </section>
+
+    <section class="testimonials">
+        <h2>What Our Guests Say</h2>
+        <div class="testimonial-grid">
+          <div class="testimonial-card">
+            <p>"The hotel was amazing! The staff were friendly and helpful, and the room was clean and comfortable."</p>
+            <p>- John D.</p>
+          </div>
+          <div class="testimonial-card">
+            <p>"I loved the hotel's location, it was close to all the major attractions. The breakfast was also delicious."</p>
+            <p>- Emily K.</p>
+          </div>
+          <!-- Add more testimonials here -->
+        </div>
+      </section>
+      
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h4>About Us</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+              <ul>
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Our Mission</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Rooms</a></li>
+                <li><a href="#">Amenities</a></li>
+                <li><a href="#">Booking</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h4>Get in Touch</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+              <ul>
+                <li><i class="fas fa-phone"></i> +234 916 276 6635</li>
+                <li>
+                    <i class="fas fa-phone"></i> +234 911 918 1007   
+                </li>
+                <li><i class="fas fa-envelope"></i> <a href="mailto:haywhystarzy247@gmail.com">haywhystarzy247@gmail.com</a></li>
+                <li><i class="fas fa-map-marker-alt"></i> NO 10, Lekki phase , Lagos State</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2023 Starzy Hotel. All rights reserved.</p>
+        </div>
+      </footer>
+
+    <script src="index.js"></script>
+</body>
